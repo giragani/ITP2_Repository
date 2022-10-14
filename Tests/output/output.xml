@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.0 on win32)" generated="20221011 16:50:57.984" rpa="false" schemaversion="3">
+<suite id="s1" name="WalkinRequest" source="C:\Users\GiriganV\PycharmProjects\CRSITP2\Tests\WalkinRequest.robot">
+<test id="s1-t1" name="FileUpload" line="352">
+<kw name="Last Name" library="FakerLibrary">
+<var>${HLastName}</var>
+<msg timestamp="20221011 16:50:59.362" level="INFO">${HLastName} = Preston</msg>
+<status status="PASS" starttime="20221011 16:50:59.361" endtime="20221011 16:50:59.362"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${HFirstname}</var>
+<msg timestamp="20221011 16:50:59.363" level="INFO">${HFirstname} = Daniel</msg>
+<status status="PASS" starttime="20221011 16:50:59.362" endtime="20221011 16:50:59.363"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${WlastName}</var>
+<msg timestamp="20221011 16:50:59.364" level="INFO">${WlastName} = Navarro</msg>
+<status status="PASS" starttime="20221011 16:50:59.363" endtime="20221011 16:50:59.364"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${WfirstName}</var>
+<msg timestamp="20221011 16:50:59.365" level="INFO">${WfirstName} = Theresa</msg>
+<status status="PASS" starttime="20221011 16:50:59.364" endtime="20221011 16:50:59.365"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${Reqlname}</var>
+<msg timestamp="20221011 16:50:59.366" level="INFO">${Reqlname} = Brown</msg>
+<status status="PASS" starttime="20221011 16:50:59.365" endtime="20221011 16:50:59.366"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${Reqfname}</var>
+<msg timestamp="20221011 16:50:59.366" level="INFO">${Reqfname} = Charles</msg>
+<status status="PASS" starttime="20221011 16:50:59.366" endtime="20221011 16:50:59.366"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${Address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20221011 16:50:59.367" level="INFO">${Address} = USNS Rogers
+FPO AA 82154</msg>
+<status status="PASS" starttime="20221011 16:50:59.367" endtime="20221011 16:50:59.367"/>
+</kw>
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221011 16:50:59.369" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221011 16:50:59.369" endtime="20221011 16:52:12.813"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221011 16:52:12.813" endtime="20221011 16:52:12.932"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:12.932" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221011 16:52:12.932" endtime="20221011 16:52:14.362"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221011 16:52:14.363" endtime="20221011 16:52:14.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:16.647" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:14.636" endtime="20221011 16:52:16.647"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:16.648" level="INFO">Clicking button 'id=AlertSuccessCloseBtn'.</msg>
+<status status="PASS" starttime="20221011 16:52:16.648" endtime="20221011 16:52:16.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:18.754" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:16.751" endtime="20221011 16:52:18.754"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221011 16:52:18.755" level="INFO">Executing JavaScript:
+document.body.style.zoom="90%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20221011 16:52:18.754" endtime="20221011 16:52:18.764"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:18.764" level="INFO">Clicking link 'xpath=//a[@id='dashboard']'.</msg>
+<status status="PASS" starttime="20221011 16:52:18.764" endtime="20221011 16:52:22.055"/>
+</kw>
+<status status="PASS" starttime="20221011 16:50:59.368" endtime="20221011 16:52:22.056"/>
+</kw>
+<kw name="ClientCertificateRequestWA" library="ITP2KeyWords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Xpath://a[@id='101']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:22.059" level="INFO">Clicking link 'Xpath://a[@id='101']'.</msg>
+<status status="PASS" starttime="20221011 16:52:22.059" endtime="20221011 16:52:22.213"/>
+</kw>
+<status status="PASS" starttime="20221011 16:52:22.057" endtime="20221011 16:52:22.214"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[text()='Walk-in Request Entry']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:22.215" level="INFO">Clicking link '//a[text()='Walk-in Request Entry']'.</msg>
+<status status="PASS" starttime="20221011 16:52:22.214" endtime="20221011 16:52:35.620"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Transaction_Type}</arg>
+<arg>AU-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:52:35.621" level="INFO">Selecting options from selection list '//select[@id='WalkInTransactiontype']' by value AU-M.</msg>
+<status status="PASS" starttime="20221011 16:52:35.620" endtime="20221011 16:52:35.850"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:38.859" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:35.850" endtime="20221011 16:52:38.859"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${No0f_C}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:38.860" level="INFO">Typing text '1' into text field '//input[@id='txtMRenReN']//preceding::input[1]'.</msg>
+<status status="PASS" starttime="20221011 16:52:38.860" endtime="20221011 16:52:38.982"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HLN}</arg>
+<arg>${HLastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:38.983" level="INFO">Typing text 'Preston' into text field '//input[@id='txtMrgPriLastName']'.</msg>
+<status status="PASS" starttime="20221011 16:52:38.982" endtime="20221011 16:52:39.112"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:41.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:39.112" endtime="20221011 16:52:41.121"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HFN}</arg>
+<arg>${HFirstname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:41.123" level="INFO">Typing text 'Daniel' into text field '//input[@id='txtMrgPriFirstName']'.</msg>
+<status status="PASS" starttime="20221011 16:52:41.122" endtime="20221011 16:52:41.228"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:43.241" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:41.229" endtime="20221011 16:52:43.241"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WLN}</arg>
+<arg>${WlastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:43.241" level="INFO">Typing text 'Navarro' into text field '//input[@id='txtMrgSecLastName']'.</msg>
+<status status="PASS" starttime="20221011 16:52:43.241" endtime="20221011 16:52:43.333"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WFN}</arg>
+<arg>${WfirstName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:43.334" level="INFO">Typing text 'Theresa' into text field '//input[@id='txtMrgSecFirstName']'.</msg>
+<status status="PASS" starttime="20221011 16:52:43.333" endtime="20221011 16:52:43.429"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:52:43.430" level="INFO">Selecting options from selection list '//select[@id='mrgMonth']' by value 01.</msg>
+<status status="PASS" starttime="20221011 16:52:43.429" endtime="20221011 16:52:43.504"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_Date}</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:43.504" level="INFO">Typing text '01' into text field '//input[@id='mrgDate']'.</msg>
+<status status="PASS" starttime="20221011 16:52:43.504" endtime="20221011 16:52:43.604"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_year}</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:43.605" level="INFO">Typing text '2018' into text field '//input[@id='mrgYear']'.</msg>
+<status status="PASS" starttime="20221011 16:52:43.604" endtime="20221011 16:52:43.729"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221011 16:52:43.729" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221011 16:52:43.729" endtime="20221011 16:52:43.738"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_Province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:52:43.738" level="INFO">Selecting options from selection list '//select[@id='marriageProvince']' by value 001.</msg>
+<status status="PASS" starttime="20221011 16:52:43.738" endtime="20221011 16:52:43.871"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_City}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:52:43.871" level="INFO">Selecting options from selection list '//select[@id='marriageCity']' by value 00101.</msg>
+<status status="PASS" starttime="20221011 16:52:43.871" endtime="20221011 16:52:43.972"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:46.987" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:43.972" endtime="20221011 16:52:46.987"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath://select[@id='cmbMarriageRequestPurpose']</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:52:46.988" level="INFO">Selecting options from selection list 'xpath://select[@id='cmbMarriageRequestPurpose']' by value CL.</msg>
+<status status="PASS" starttime="20221011 16:52:46.987" endtime="20221011 16:52:47.052"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>C://Users//GiriganV//Documents//Tiff_Files//uploadingfile.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20221011 16:52:47.063" level="INFO">AutoItLibrary.Run(FileName='C://Users//GiriganV//Documents//Tiff_Files//uploadingfile.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20221011 16:52:47.052" endtime="20221011 16:52:47.063"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:52:57.067" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:47.063" endtime="20221011 16:52:57.067"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@data-bind='click:marriageSaveClick']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221011 16:52:57.068" level="INFO">Clicking button '//button[@data-bind='click:marriageSaveClick']'.</msg>
+<status status="PASS" starttime="20221011 16:52:57.067" endtime="20221011 16:52:57.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:53:02.131" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221011 16:52:57.126" endtime="20221011 16:53:02.131"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ln}</arg>
+<arg>${Reqlname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:53:02.132" level="INFO">Typing text 'Brown' into text field '//input[@id='txtReqLastName']'.</msg>
+<status status="PASS" starttime="20221011 16:53:02.131" endtime="20221011 16:53:02.330"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_fn}</arg>
+<arg>${Reqfname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:53:02.331" level="INFO">Typing text 'Charles' into text field '//input[@id='txtReqFirstName']'.</msg>
+<status status="PASS" starttime="20221011 16:53:02.331" endtime="20221011 16:53:02.517"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ad}</arg>
+<arg>${Address}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20221011 16:53:02.518" level="INFO">Typing text 'USNS Rogers
+FPO AA 82154' into text field '//input[@id='txtAddress']'.</msg>
+<status status="PASS" starttime="20221011 16:53:02.517" endtime="20221011 16:53:02.761"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Req_country}</arg>
+<arg>016</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221011 16:53:02.762" level="INFO">Selecting options from selection list '//select[@id='cmbChildCountry']' by value 016.</msg>
+<status status="PASS" starttime="20221011 16:53:02.762" endtime="20221011 16:53:02.944"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:53:07.946" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221011 16:53:02.945" endtime="20221011 16:53:07.947"/>
+</kw>
+<kw name="Scrollbar" library="ITP2KeyWords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221011 16:53:07.952" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221011 16:53:07.950" endtime="20221011 16:53:07.985"/>
+</kw>
+<status status="PASS" starttime="20221011 16:53:07.948" endtime="20221011 16:53:07.986"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:53:17.997" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221011 16:53:07.987" endtime="20221011 16:53:17.997"/>
+</kw>
+<kw name="FinalSubmitButton" library="ITP2KeyWords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://button[@id='finalSubmitbtn' and text()='Submit']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221011 16:53:17.999" level="INFO">Clicking button 'Xpath://button[@id='finalSubmitbtn' and text()='Submit']'.</msg>
+<status status="PASS" starttime="20221011 16:53:17.999" endtime="20221011 16:53:18.143"/>
+</kw>
+<status status="PASS" starttime="20221011 16:53:17.998" endtime="20221011 16:53:18.144"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221011 16:53:23.151" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221011 16:53:18.144" endtime="20221011 16:53:23.151"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221011 16:53:23.619" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221011 16:53:23.152" endtime="20221011 16:53:23.619"/>
+</kw>
+<doc>Walk-in Request Entry: Verify the End To End flow client request VO-Marriage</doc>
+<status status="PASS" starttime="20221011 16:50:59.359" endtime="20221011 16:53:23.620"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20221011 16:50:57.989" endtime="20221011 16:53:23.622"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WalkinRequest">WalkinRequest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
