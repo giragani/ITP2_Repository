@@ -1,81 +1,2157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.0 on win32)" generated="20220822 15:26:50.606" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.7.0 on win32)" generated="20221017 12:09:17.030" rpa="false" schemaversion="3">
 <suite id="s1" name="WalkinRequest" source="C:\Users\GiriganV\PycharmProjects\CRSITP2\Tests\WalkinRequest.robot">
-<test id="s1-t1" name="AccessHomePage" line="15">
+<test id="s1-t1" name="GenerateQueueTicket" line="53">
 <kw name="Open Counter" library="ITP2KeyWords">
 <doc>This keyword opens the counter of CRS application</doc>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url_qa}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the given ``url``.</doc>
-<msg timestamp="20220822 15:26:51.962" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
-<status status="PASS" starttime="20220822 15:26:51.962" endtime="20220822 15:28:04.116"/>
+<msg timestamp="20221017 12:09:18.581" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:09:18.580" endtime="20221017 12:10:34.669"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220822 15:28:04.117" endtime="20220822 15:28:04.250"/>
+<status status="PASS" starttime="20221017 12:10:34.670" endtime="20221017 12:10:34.823"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>${Open_Button}</arg>
+<arg>${open_button}</arg>
 <doc>Clicks button identified by ``locator``.</doc>
-<msg timestamp="20220822 15:28:04.250" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
-<status status="PASS" starttime="20220822 15:28:04.250" endtime="20220822 15:28:05.688"/>
+<msg timestamp="20221017 12:10:34.824" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:10:34.823" endtime="20221017 12:10:36.373"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Close_Success_Button}</arg>
+<arg>${close_success_button}</arg>
 <doc>Waits until element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220822 15:28:05.689" endtime="20220822 15:28:05.969"/>
+<status status="PASS" starttime="20221017 12:10:36.374" endtime="20221017 12:10:36.823"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220822 15:28:07.983" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220822 15:28:05.969" endtime="20220822 15:28:07.983"/>
+<msg timestamp="20221017 12:10:38.833" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221017 12:10:36.824" endtime="20221017 12:10:38.833"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>${Close_Success_Button}</arg>
+<arg>${close_success_button}</arg>
 <doc>Clicks button identified by ``locator``.</doc>
-<msg timestamp="20220822 15:28:07.984" level="INFO">Clicking button 'id=AlertSuccessCloseBtn'.</msg>
-<status status="PASS" starttime="20220822 15:28:07.983" endtime="20220822 15:28:08.065"/>
+<msg timestamp="20221017 12:10:38.836" level="INFO">Clicking button 'id=AlertSuccessCloseBtn'.</msg>
+<status status="PASS" starttime="20221017 12:10:38.834" endtime="20221017 12:10:39.055"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220822 15:28:10.077" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220822 15:28:08.066" endtime="20220822 15:28:10.077"/>
+<msg timestamp="20221017 12:10:41.070" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221017 12:10:39.055" endtime="20221017 12:10:41.070"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>document.body.style.zoom="90%"</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220822 15:28:10.078" level="INFO">Executing JavaScript:
+<msg timestamp="20221017 12:10:41.072" level="INFO">Executing JavaScript:
 document.body.style.zoom="90%"
 Without any arguments.</msg>
-<status status="PASS" starttime="20220822 15:28:10.078" endtime="20220822 15:28:10.084"/>
+<status status="PASS" starttime="20221017 12:10:41.070" endtime="20221017 12:10:41.086"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
-<arg>${Application_Home}</arg>
+<arg>${application_home}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220822 15:28:10.085" level="INFO">Clicking link 'xpath=//a[@id='dashboard']'.</msg>
-<status status="PASS" starttime="20220822 15:28:10.085" endtime="20220822 15:28:11.879"/>
+<msg timestamp="20221017 12:10:41.087" level="INFO">Clicking link 'xpath=//a[@id='dashboard']'.</msg>
+<status status="PASS" starttime="20221017 12:10:41.086" endtime="20221017 12:10:43.792"/>
 </kw>
-<status status="PASS" starttime="20220822 15:26:51.961" endtime="20220822 15:28:11.880"/>
+<status status="PASS" starttime="20221017 12:09:18.579" endtime="20221017 12:10:43.793"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//img[@src='/Common/Content/images/more-icon.svg']</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221017 12:10:43.795" level="INFO">Clicking image '//img[@src='/Common/Content/images/more-icon.svg']'.</msg>
+<status status="PASS" starttime="20221017 12:10:43.794" endtime="20221017 12:10:43.984"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[text()='Queue Management System']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221017 12:10:43.986" level="INFO">Clicking link '//a[text()='Queue Management System']'.</msg>
+<status status="PASS" starttime="20221017 12:10:43.985" endtime="20221017 12:10:44.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:10:46.146" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221017 12:10:44.136" endtime="20221017 12:10:46.146"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[text()='QMS Home']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221017 12:10:46.148" level="INFO">Clicking link '//a[text()='QMS Home']'.</msg>
+<status status="PASS" starttime="20221017 12:10:46.147" endtime="20221017 12:10:48.421"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:10:50.430" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221017 12:10:48.422" endtime="20221017 12:10:50.430"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//img[@src='/images/DashboardIconsLatest/Queue Ticketing System.svg']</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221017 12:10:50.434" level="INFO">Clicking image '//img[@src='/images/DashboardIconsLatest/Queue Ticketing System.svg']'.</msg>
+<status status="PASS" starttime="20221017 12:10:50.432" endtime="20221017 12:10:50.727"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:10:53.739" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221017 12:10:50.732" endtime="20221017 12:10:53.740"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>@{windows}</var>
+<doc>Return all current window handles as a list.</doc>
+<msg timestamp="20221017 12:10:53.758" level="INFO">@{windows} = [ CDwindow-25114EB53EBD804ADFD3D14FEAE9A6AB | CDwindow-4319394AE1E049EA86622292EDA72CDB ]</msg>
+<status status="PASS" starttime="20221017 12:10:53.743" endtime="20221017 12:10:53.758"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>@{windows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221017 12:10:53.763" endtime="20221017 12:10:53.765"/>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<var>${handle}</var>
+<arg>${windows}[1]</arg>
+<doc>Selects browser window matching ``locator``.</doc>
+<msg timestamp="20221017 12:10:54.087" level="INFO">${handle} = CDwindow-25114EB53EBD804ADFD3D14FEAE9A6AB</msg>
+<status status="PASS" starttime="20221017 12:10:53.767" endtime="20221017 12:10:54.088"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Civil Registry System</arg>
+<doc>Verifies that current page title equals ``title``.</doc>
+<msg timestamp="20221017 12:11:15.322" level="INFO">Page title is 'Civil Registry System'.</msg>
+<status status="PASS" starttime="20221017 12:10:54.090" endtime="20221017 12:11:15.322"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:11:20.331" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221017 12:11:15.323" endtime="20221017 12:11:20.331"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='thumbnailDiv' and @data-bind='click:RegularQueueClick']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:11:20.332" level="INFO">Clicking button '//button[@class='thumbnailDiv' and @data-bind='click:RegularQueueClick']'.</msg>
+<status status="PASS" starttime="20221017 12:11:20.332" endtime="20221017 12:11:20.414"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:11:23.423" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221017 12:11:20.415" endtime="20221017 12:11:23.423"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@data-bind='click:EncodingAndPaymentClicked']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:11:23.424" level="INFO">Clicking button '//button[@data-bind='click:EncodingAndPaymentClicked']'.</msg>
+<status status="PASS" starttime="20221017 12:11:23.423" endtime="20221017 12:11:23.473"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:11:31.482" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20221017 12:11:23.473" endtime="20221017 12:11:31.482"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>@{qtnwindows}</var>
+<doc>Return all current window handles as a list.</doc>
+<msg timestamp="20221017 12:11:31.488" level="INFO">@{qtnwindows} = [ CDwindow-25114EB53EBD804ADFD3D14FEAE9A6AB | CDwindow-4319394AE1E049EA86622292EDA72CDB | CDwindow-F9004224841840F32AF8C4E09AB1E3B5 | CDwindow-605BDB49F2C4DE8E603AA877E2CC92FD ]</msg>
+<status status="PASS" starttime="20221017 12:11:31.484" endtime="20221017 12:11:31.488"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221017 12:11:37.500" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221017 12:11:31.489" endtime="20221017 12:11:37.500"/>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<arg>${qtnwindows}[1]</arg>
+<doc>Selects browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221017 12:11:37.501" endtime="20221017 12:11:37.593"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${qtn}</var>
+<arg>//span[@data-bind='text:QueueTicketNumber']</arg>
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<msg timestamp="20221017 12:11:37.652" level="INFO">${qtn} = 0001 E</msg>
+<status status="PASS" starttime="20221017 12:11:37.596" endtime="20221017 12:11:37.652"/>
+</kw>
+<status status="PASS" starttime="20221017 12:09:18.578" endtime="20221017 12:11:37.652"/>
+</test>
+<test id="s1-t2" name="Access Home Page" line="96">
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:11:37.656" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:11:37.656" endtime="20221017 12:12:50.530"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:12:50.531" endtime="20221017 12:12:50.657"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:12:50.658" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:12:50.658" endtime="20221017 12:12:50.737"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:12:56.483" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:12:55.808" endtime="20221017 12:12:56.485"/>
+</kw>
+<msg timestamp="20221017 12:12:56.490" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:12:50.737" endtime="20221017 12:12:56.508"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.511" endtime="20221017 12:12:56.511"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.512" endtime="20221017 12:12:56.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.513" endtime="20221017 12:12:56.514"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.515" endtime="20221017 12:12:56.515"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.516" endtime="20221017 12:12:56.516"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:11:37.655" endtime="20221017 12:12:56.521"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Civil Registry System</arg>
+<doc>Verifies that current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.524" endtime="20221017 12:12:56.524"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Xpath://a[@id='dashboard']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.525" endtime="20221017 12:12:56.525"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Xpath://a[@id='101']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.527" endtime="20221017 12:12:56.528"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link:Walk-in Request Entry</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.529" endtime="20221017 12:12:56.530"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:WalkInTransactiontype</arg>
+<arg>RA-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.531" endtime="20221017 12:12:56.531"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.533" endtime="20221017 12:12:56.534"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:documentSubType</arg>
+<arg>MA-AA</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.536" endtime="20221017 12:12:56.537"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Xpath://body[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[2]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/input[1]</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.538" endtime="20221017 12:12:56.539"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Certificate of Finality</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.540" endtime="20221017 12:12:56.541"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Certificate of Registration of Court Decision/Order</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.542" endtime="20221017 12:12:56.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.544" endtime="20221017 12:12:56.545"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Xpath://body[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[2]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/input[1]</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.546" endtime="20221017 12:12:56.547"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.548" endtime="20221017 12:12:56.548"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath://input[@id='new' and @name='Annotated Certificate of Marriage']</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.549" endtime="20221017 12:12:56.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.555" endtime="20221017 12:12:56.555"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath://input[@id='new' and @name='Certificate of Marriage (Un-annotated)']</arg>
+<doc>Selects checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.557" endtime="20221017 12:12:56.557"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221017 12:12:56.559" endtime="20221017 12:12:56.560"/>
 </kw>
 <doc>This test case opens the url and accesses the Home Page of CRS after opening the counter</doc>
-<tag>Sanity1</tag>
-<status status="PASS" starttime="20220822 15:26:51.959" endtime="20220822 15:28:11.881"/>
+<tag>Sanity</tag>
+<status status="FAIL" starttime="20221017 12:11:37.654" endtime="20221017 12:12:56.562">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t3" name="VOMarriageWAlkin" line="118">
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:12:56.579" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:12:56.577" endtime="20221017 12:14:38.802"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:14:38.802" endtime="20221017 12:14:38.940"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:14:38.941" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:14:38.940" endtime="20221017 12:14:39.037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:14:44.473" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:14:44.159" endtime="20221017 12:14:44.473"/>
+</kw>
+<msg timestamp="20221017 12:14:44.474" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:14:39.038" endtime="20221017 12:14:44.474"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.475" endtime="20221017 12:14:44.475"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.475" endtime="20221017 12:14:44.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.475" endtime="20221017 12:14:44.475"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.476" endtime="20221017 12:14:44.476"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.476" endtime="20221017 12:14:44.476"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:12:56.576" endtime="20221017 12:14:44.477"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@id='101']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.477" endtime="20221017 12:14:44.478"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[text()='Walk-in Request Entry']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.479" endtime="20221017 12:14:44.479"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='WalkInTransactiontype']</arg>
+<arg>PA-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.479" endtime="20221017 12:14:44.479"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.481" endtime="20221017 12:14:44.481"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='documentSubType']</arg>
+<arg>MA-AA</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.482" endtime="20221017 12:14:44.482"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Court Decision']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.483" endtime="20221017 12:14:44.483"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Certificate of Finality']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.484" endtime="20221017 12:14:44.484"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Certificate of Registration of Court Decision/Order']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.485" endtime="20221017 12:14:44.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Certificate of Authenticity of the Court Decision/Order ']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.486" endtime="20221017 12:14:44.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Annotated Certificate of Marriage']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.486" endtime="20221017 12:14:44.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='new' and @name='Certificate of Marriage (Un-annotated)']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.487" endtime="20221017 12:14:44.487"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='WizardDonebtn']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.488" endtime="20221017 12:14:44.488"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='WizardSubmitbtn']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.488" endtime="20221017 12:14:44.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgPriLastName</arg>
+<arg>HLN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.489" endtime="20221017 12:14:44.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgPriFirstName</arg>
+<arg>HFN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.491" endtime="20221017 12:14:44.491"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgPriMiddleName</arg>
+<arg>HMN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.492" endtime="20221017 12:14:44.492"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgSecLastName</arg>
+<arg>WLN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.493" endtime="20221017 12:14:44.493"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgSecFirstName</arg>
+<arg>WFN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.494" endtime="20221017 12:14:44.494"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtMrgSecMiddleName</arg>
+<arg>WMN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.495" endtime="20221017 12:14:44.495"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:mrgMonth</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.495" endtime="20221017 12:14:44.495"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:mrgDate</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.496" endtime="20221017 12:14:44.496"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:mrgYear</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.497" endtime="20221017 12:14:44.497"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:marriageProvince</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.498" endtime="20221017 12:14:44.498"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:marriageCity</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.499" endtime="20221017 12:14:44.499"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:cmbMarriageRequestPurpose</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.500" endtime="20221017 12:14:44.500"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@data-bind='click:marriageSaveClick']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.501" endtime="20221017 12:14:44.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtReqLastName</arg>
+<arg>ReqLN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.502" endtime="20221017 12:14:44.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtReqFirstName</arg>
+<arg>ReqFN</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.502" endtime="20221017 12:14:44.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='txtAddress']</arg>
+<arg>AddressLine1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.503" endtime="20221017 12:14:44.503"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='streetAddress']</arg>
+<arg>AddressLine2</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.503" endtime="20221017 12:14:44.503"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.504" endtime="20221017 12:14:44.504"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>id:cmbProvince</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.504" endtime="20221017 12:14:44.504"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.505" endtime="20221017 12:14:44.505"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath://select[@id='cmbProvince']</arg>
+<arg>BANGUED</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.505" endtime="20221017 12:14:44.505"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.506" endtime="20221017 12:14:44.506"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='finalSubmitbtn']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:14:44.506" endtime="20221017 12:14:44.506"/>
+</kw>
+<doc>The keyword opens the counter of CRS Application</doc>
+<status status="FAIL" starttime="20221017 12:12:56.570" endtime="20221017 12:14:44.507">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t4" name="Payment" line="161">
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:14:44.510" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:14:44.510" endtime="20221017 12:16:03.675"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:16:03.676" endtime="20221017 12:16:03.874"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:16:03.876" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:16:03.875" endtime="20221017 12:16:04.067"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:16:09.611" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:16:09.163" endtime="20221017 12:16:09.611"/>
+</kw>
+<msg timestamp="20221017 12:16:09.612" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:16:04.068" endtime="20221017 12:16:09.613"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.614" endtime="20221017 12:16:09.615"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.615" endtime="20221017 12:16:09.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.616" endtime="20221017 12:16:09.616"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.616" endtime="20221017 12:16:09.616"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.617" endtime="20221017 12:16:09.617"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:14:44.509" endtime="20221017 12:16:09.620"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ccr_Link}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.623" endtime="20221017 12:16:09.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${wrp_Link}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.624" endtime="20221017 12:16:09.624"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ctt_option}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.625" endtime="20221017 12:16:09.625"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.626" endtime="20221017 12:16:09.626"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${number_of_copies}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.627" endtime="20221017 12:16:09.627"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${de_last_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.628" endtime="20221017 12:16:09.628"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${de_first_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.629" endtime="20221017 12:16:09.629"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${de_middle_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.630" endtime="20221017 12:16:09.630"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${father_last_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.631" endtime="20221017 12:16:09.631"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${father_first_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.632" endtime="20221017 12:16:09.632"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${father_middle_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.633" endtime="20221017 12:16:09.633"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${mother_last_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.634" endtime="20221017 12:16:09.634"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${mother_first_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.638" endtime="20221017 12:16:09.639"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${mother_middle_name}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.640" endtime="20221017 12:16:09.640"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${re_lastname}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.641" endtime="20221017 12:16:09.641"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${re_firstname}</var>
+<status status="NOT RUN" starttime="20221017 12:16:09.641" endtime="20221017 12:16:09.642"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${re_address1}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.643" endtime="20221017 12:16:09.643"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${re_address2}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.643" endtime="20221017 12:16:09.644"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${d_last_name}</arg>
+<arg>${de_last_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.644" endtime="20221017 12:16:09.644"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${d_firstname}</arg>
+<arg>${de_first_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.645" endtime="20221017 12:16:09.645"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${d_middlename}</arg>
+<arg>${de_middle_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.645" endtime="20221017 12:16:09.646"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${death_sex}</arg>
+<arg>Female</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.646" endtime="20221017 12:16:09.646"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${death_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.647" endtime="20221017 12:16:09.647"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${death_date}</arg>
+<arg>12</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.647" endtime="20221017 12:16:09.647"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${death_year}</arg>
+<arg>2021</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.648" endtime="20221017 12:16:09.648"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${country}</arg>
+<arg>608</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.649" endtime="20221017 12:16:09.649"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.649" endtime="20221017 12:16:09.649"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${city}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.650" endtime="20221017 12:16:09.650"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fa_lastname}</arg>
+<arg>${father_last_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.651" endtime="20221017 12:16:09.651"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fa_firstname}</arg>
+<arg>${father_first_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.656" endtime="20221017 12:16:09.657"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fa_middlename}</arg>
+<arg>${father_middle_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.658" endtime="20221017 12:16:09.658"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ma_lastname}</arg>
+<arg>${mother_last_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.659" endtime="20221017 12:16:09.659"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ma_firstname}</arg>
+<arg>${mother_first_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.660" endtime="20221017 12:16:09.660"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ma_middlename}</arg>
+<arg>${mother_middle_name}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.661" endtime="20221017 12:16:09.661"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='cmbDeathRequestPurpose']</arg>
+<arg>${purpose}[0]</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.662" endtime="20221017 12:16:09.662"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.663" endtime="20221017 12:16:09.663"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.664" endtime="20221017 12:16:09.664"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.665" endtime="20221017 12:16:09.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.666" endtime="20221017 12:16:09.666"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='txtReqLastName']</arg>
+<arg>a1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.667" endtime="20221017 12:16:09.667"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='txtReqFirstName']</arg>
+<arg>a2</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.672" endtime="20221017 12:16:09.672"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='txtAddress']</arg>
+<arg>a3</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.673" endtime="20221017 12:16:09.673"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.674" endtime="20221017 12:16:09.675"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${r_province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.676" endtime="20221017 12:16:09.676"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.677" endtime="20221017 12:16:09.677"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.678" endtime="20221017 12:16:09.678"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.679" endtime="20221017 12:16:09.679"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//select[@id='cmbProvince']/following::select[1]</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.680" endtime="20221017 12:16:09.680"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>//select[@id='cmbProvince']/following::select[1]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.682" endtime="20221017 12:16:09.682"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.683" endtime="20221017 12:16:09.683"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.683" endtime="20221017 12:16:09.684"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${get_value}</var>
+<arg>xpath=//span[@id="TotalAmt"]</arg>
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.687" endtime="20221017 12:16:09.688"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${get_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.689" endtime="20221017 12:16:09.689"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="txtAmountTendered"]</arg>
+<arg>${get_value}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.690" endtime="20221017 12:16:09.690"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.691" endtime="20221017 12:16:09.691"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.692" endtime="20221017 12:16:09.692"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[text()='Print OR']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:16:09.693" endtime="20221017 12:16:09.693"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:14:44.509" endtime="20221017 12:16:09.694">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t5" name="VOMarriage" line="243">
+<kw name="Last Name" library="FakerLibrary">
+<var>${HLastName}</var>
+<msg timestamp="20221017 12:16:09.700" level="INFO">${HLastName} = Miller</msg>
+<status status="PASS" starttime="20221017 12:16:09.698" endtime="20221017 12:16:09.700"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${HFirstname}</var>
+<msg timestamp="20221017 12:16:09.705" level="INFO">${HFirstname} = Juan</msg>
+<status status="PASS" starttime="20221017 12:16:09.703" endtime="20221017 12:16:09.706"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${WlastName}</var>
+<msg timestamp="20221017 12:16:09.707" level="INFO">${WlastName} = Mills</msg>
+<status status="PASS" starttime="20221017 12:16:09.706" endtime="20221017 12:16:09.707"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${WfirstName}</var>
+<msg timestamp="20221017 12:16:09.709" level="INFO">${WfirstName} = Michelle</msg>
+<status status="PASS" starttime="20221017 12:16:09.708" endtime="20221017 12:16:09.709"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${Reqlname}</var>
+<msg timestamp="20221017 12:16:09.710" level="INFO">${Reqlname} = Williams</msg>
+<status status="PASS" starttime="20221017 12:16:09.710" endtime="20221017 12:16:09.710"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${Reqfname}</var>
+<msg timestamp="20221017 12:16:09.712" level="INFO">${Reqfname} = Deborah</msg>
+<status status="PASS" starttime="20221017 12:16:09.711" endtime="20221017 12:16:09.712"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${Address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20221017 12:16:09.714" level="INFO">${Address} = 91724 Snyder Cape Apt. 768
+South Daniel, OR 64334</msg>
+<status status="PASS" starttime="20221017 12:16:09.713" endtime="20221017 12:16:09.714"/>
+</kw>
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:16:09.716" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:16:09.716" endtime="20221017 12:17:30.883"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:17:30.884" endtime="20221017 12:17:31.040"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:17:31.041" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:17:31.040" endtime="20221017 12:17:31.195"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:17:36.688" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:17:36.330" endtime="20221017 12:17:36.688"/>
+</kw>
+<msg timestamp="20221017 12:17:36.691" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:17:31.196" endtime="20221017 12:17:36.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.693" endtime="20221017 12:17:36.693"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.693" endtime="20221017 12:17:36.693"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.694" endtime="20221017 12:17:36.694"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.694" endtime="20221017 12:17:36.694"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.694" endtime="20221017 12:17:36.694"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:16:09.714" endtime="20221017 12:17:36.695"/>
+</kw>
+<kw name="ClientCertificateRequestWA" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:17:36.697" endtime="20221017 12:17:36.697"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Walkin_Menu}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.698" endtime="20221017 12:17:36.698"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Transaction_Type}</arg>
+<arg>VO-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.699" endtime="20221017 12:17:36.699"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.700" endtime="20221017 12:17:36.700"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HLN}</arg>
+<arg>${HLastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.701" endtime="20221017 12:17:36.701"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.701" endtime="20221017 12:17:36.701"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HFN}</arg>
+<arg>${HFirstname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.702" endtime="20221017 12:17:36.702"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.703" endtime="20221017 12:17:36.703"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WLN}</arg>
+<arg>${WlastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.703" endtime="20221017 12:17:36.703"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WFN}</arg>
+<arg>${WfirstName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.704" endtime="20221017 12:17:36.704"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.704" endtime="20221017 12:17:36.704"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_Date}</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.705" endtime="20221017 12:17:36.705"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_year}</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.708" endtime="20221017 12:17:36.709"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_Province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.710" endtime="20221017 12:17:36.710"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_City}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.711" endtime="20221017 12:17:36.711"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${vom_Purpose}</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.712" endtime="20221017 12:17:36.712"/>
+</kw>
+<kw name="ScrollandClicksave" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:17:36.713" endtime="20221017 12:17:36.713"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ln}</arg>
+<arg>${Reqlname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.714" endtime="20221017 12:17:36.714"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_fn}</arg>
+<arg>${Reqfname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.714" endtime="20221017 12:17:36.714"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ad}</arg>
+<arg>${Address}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.715" endtime="20221017 12:17:36.715"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Req_country}</arg>
+<arg>016</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.715" endtime="20221017 12:17:36.715"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.716" endtime="20221017 12:17:36.716"/>
+</kw>
+<kw name="Scrollbar" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:17:36.716" endtime="20221017 12:17:36.716"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.717" endtime="20221017 12:17:36.717"/>
+</kw>
+<kw name="FinalSubmitButton" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:17:36.717" endtime="20221017 12:17:36.717"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.718" endtime="20221017 12:17:36.718"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${get_ref}</var>
+<arg>//span[@data-bind='text: RequestNo']</arg>
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.718" endtime="20221017 12:17:36.718"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${get_ref}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.718" endtime="20221017 12:17:36.719"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:17:36.719" endtime="20221017 12:17:36.719"/>
+</kw>
+<doc>Walk-in Request Entry: Verify the End To End flow client request VO-Marriage</doc>
+<status status="FAIL" starttime="20221017 12:16:09.697" endtime="20221017 12:17:36.720">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t6" name="Authmarriage" line="299">
+<kw name="Last Name" library="FakerLibrary">
+<var>${HLastName}</var>
+<msg timestamp="20221017 12:17:36.727" level="INFO">${HLastName} = Johnson</msg>
+<status status="PASS" starttime="20221017 12:17:36.726" endtime="20221017 12:17:36.727"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${HFirstname}</var>
+<msg timestamp="20221017 12:17:36.728" level="INFO">${HFirstname} = Marcus</msg>
+<status status="PASS" starttime="20221017 12:17:36.727" endtime="20221017 12:17:36.728"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${WlastName}</var>
+<msg timestamp="20221017 12:17:36.729" level="INFO">${WlastName} = Potts</msg>
+<status status="PASS" starttime="20221017 12:17:36.729" endtime="20221017 12:17:36.729"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${WfirstName}</var>
+<msg timestamp="20221017 12:17:36.730" level="INFO">${WfirstName} = Madison</msg>
+<status status="PASS" starttime="20221017 12:17:36.730" endtime="20221017 12:17:36.730"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${Reqlname}</var>
+<msg timestamp="20221017 12:17:36.731" level="INFO">${Reqlname} = Martinez</msg>
+<status status="PASS" starttime="20221017 12:17:36.731" endtime="20221017 12:17:36.731"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${Reqfname}</var>
+<msg timestamp="20221017 12:17:36.732" level="INFO">${Reqfname} = Mark</msg>
+<status status="PASS" starttime="20221017 12:17:36.731" endtime="20221017 12:17:36.732"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${Address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20221017 12:17:36.733" level="INFO">${Address} = USNV Torres
+FPO AP 94430</msg>
+<status status="PASS" starttime="20221017 12:17:36.732" endtime="20221017 12:17:36.733"/>
+</kw>
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:17:36.735" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:17:36.734" endtime="20221017 12:19:17.664"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:19:17.664" endtime="20221017 12:19:17.819"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:19:17.820" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:19:17.819" endtime="20221017 12:19:17.981"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:19:23.402" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:19:23.025" endtime="20221017 12:19:23.402"/>
+</kw>
+<msg timestamp="20221017 12:19:23.403" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:19:17.982" endtime="20221017 12:19:23.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.405" endtime="20221017 12:19:23.405"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.405" endtime="20221017 12:19:23.408"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.409" endtime="20221017 12:19:23.409"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.409" endtime="20221017 12:19:23.409"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.410" endtime="20221017 12:19:23.410"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:17:36.733" endtime="20221017 12:19:23.411"/>
+</kw>
+<kw name="ClientCertificateRequestWA" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:19:23.412" endtime="20221017 12:19:23.413"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Walkin_Menu}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.414" endtime="20221017 12:19:23.414"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Transaction_Type}</arg>
+<arg>AU-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.415" endtime="20221017 12:19:23.415"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.416" endtime="20221017 12:19:23.416"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${No0f_C}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.417" endtime="20221017 12:19:23.417"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HLN}</arg>
+<arg>${HLastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.418" endtime="20221017 12:19:23.418"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.419" endtime="20221017 12:19:23.419"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HFN}</arg>
+<arg>${HFirstname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.419" endtime="20221017 12:19:23.419"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.420" endtime="20221017 12:19:23.420"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WLN}</arg>
+<arg>${WlastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.421" endtime="20221017 12:19:23.421"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WFN}</arg>
+<arg>${WfirstName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.421" endtime="20221017 12:19:23.421"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.422" endtime="20221017 12:19:23.425"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_Date}</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.425" endtime="20221017 12:19:23.425"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_year}</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.426" endtime="20221017 12:19:23.426"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.427" endtime="20221017 12:19:23.427"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_Province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.428" endtime="20221017 12:19:23.428"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_City}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.428" endtime="20221017 12:19:23.428"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.429" endtime="20221017 12:19:23.429"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath://select[@id='cmbMarriageRequestPurpose']</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.430" endtime="20221017 12:19:23.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.430" endtime="20221017 12:19:23.430"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//button[@id='marriage-AddImageBtn']</arg>
+<arg>C:/Users/GiriganV/Desktop/Tiff Files/Birth certificate - tilted - 1 page.tiff</arg>
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.431" endtime="20221017 12:19:23.431"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.431" endtime="20221017 12:19:23.431"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ln}</arg>
+<arg>${Reqlname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.432" endtime="20221017 12:19:23.432"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_fn}</arg>
+<arg>${Reqfname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.432" endtime="20221017 12:19:23.432"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ad}</arg>
+<arg>${Address}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.433" endtime="20221017 12:19:23.433"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Req_country}</arg>
+<arg>016</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.434" endtime="20221017 12:19:23.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.435" endtime="20221017 12:19:23.435"/>
+</kw>
+<kw name="Scrollbar" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:19:23.435" endtime="20221017 12:19:23.435"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:19:23.436" endtime="20221017 12:19:23.436"/>
+</kw>
+<kw name="FinalSubmitButton" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:19:23.436" endtime="20221017 12:19:23.436"/>
+</kw>
+<doc>Walk-in Request Entry: Verify the End To End flow client request VO-Marriage</doc>
+<status status="FAIL" starttime="20221017 12:17:36.721" endtime="20221017 12:19:23.437">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t7" name="FileUpload" line="352">
+<kw name="Last Name" library="FakerLibrary">
+<var>${HLastName}</var>
+<msg timestamp="20221017 12:19:23.445" level="INFO">${HLastName} = Miller</msg>
+<status status="PASS" starttime="20221017 12:19:23.444" endtime="20221017 12:19:23.445"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${HFirstname}</var>
+<msg timestamp="20221017 12:19:23.446" level="INFO">${HFirstname} = John</msg>
+<status status="PASS" starttime="20221017 12:19:23.445" endtime="20221017 12:19:23.446"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${WlastName}</var>
+<msg timestamp="20221017 12:19:23.447" level="INFO">${WlastName} = Garcia</msg>
+<status status="PASS" starttime="20221017 12:19:23.446" endtime="20221017 12:19:23.447"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${WfirstName}</var>
+<msg timestamp="20221017 12:19:23.448" level="INFO">${WfirstName} = Michael</msg>
+<status status="PASS" starttime="20221017 12:19:23.447" endtime="20221017 12:19:23.448"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${Reqlname}</var>
+<msg timestamp="20221017 12:19:23.449" level="INFO">${Reqlname} = Donovan</msg>
+<status status="PASS" starttime="20221017 12:19:23.448" endtime="20221017 12:19:23.449"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${Reqfname}</var>
+<msg timestamp="20221017 12:19:23.450" level="INFO">${Reqfname} = Kimberly</msg>
+<status status="PASS" starttime="20221017 12:19:23.450" endtime="20221017 12:19:23.450"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${Address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20221017 12:19:23.452" level="INFO">${Address} = 16424 Chavez Inlet
+New Barbara, DC 65580</msg>
+<status status="PASS" starttime="20221017 12:19:23.451" endtime="20221017 12:19:23.452"/>
+</kw>
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:19:23.454" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:19:23.453" endtime="20221017 12:20:30.749"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:20:30.749" endtime="20221017 12:20:30.998"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:20:31.008" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:20:30.999" endtime="20221017 12:20:31.422"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:20:37.423" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:20:36.514" endtime="20221017 12:20:37.423"/>
+</kw>
+<msg timestamp="20221017 12:20:37.426" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:20:31.422" endtime="20221017 12:20:37.429"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.430" endtime="20221017 12:20:37.431"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.433" endtime="20221017 12:20:37.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.436" endtime="20221017 12:20:37.436"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.437" endtime="20221017 12:20:37.438"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.439" endtime="20221017 12:20:37.440"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:19:23.452" endtime="20221017 12:20:37.443"/>
+</kw>
+<kw name="ClientCertificateRequestWA" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:20:37.446" endtime="20221017 12:20:37.446"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[text()='Walk-in Request Entry']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.454" endtime="20221017 12:20:37.455"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Transaction_Type}</arg>
+<arg>AU-M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.456" endtime="20221017 12:20:37.456"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.457" endtime="20221017 12:20:37.458"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${No0f_C}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.459" endtime="20221017 12:20:37.459"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HLN}</arg>
+<arg>${HLastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.461" endtime="20221017 12:20:37.462"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.463" endtime="20221017 12:20:37.463"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HFN}</arg>
+<arg>${HFirstname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.469" endtime="20221017 12:20:37.470"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.472" endtime="20221017 12:20:37.473"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WLN}</arg>
+<arg>${WlastName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.475" endtime="20221017 12:20:37.475"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${WFN}</arg>
+<arg>${WfirstName}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.476" endtime="20221017 12:20:37.477"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.479" endtime="20221017 12:20:37.479"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_Date}</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.481" endtime="20221017 12:20:37.486"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${M_year}</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.489" endtime="20221017 12:20:37.489"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.491" endtime="20221017 12:20:37.492"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_Province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.493" endtime="20221017 12:20:37.494"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${M_City}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.495" endtime="20221017 12:20:37.495"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.497" endtime="20221017 12:20:37.497"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath://select[@id='cmbMarriageRequestPurpose']</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.505" endtime="20221017 12:20:37.505"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5 sec</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>//button[@id='marriage-AddImageBtn']</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.507" endtime="20221017 12:20:37.508"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5 sec</arg>
+<arg>Click Element</arg>
+<arg>//button[@id='marriage-AddImageBtn']</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.510" endtime="20221017 12:20:37.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.512" endtime="20221017 12:20:37.512"/>
+</kw>
+<kw name="File Upload" library="ITP2KeyWords">
+<arg>C://Users//GiriganV//Documents//Tiff_Files//uploadingfile.exe</arg>
+<arg>${files}</arg>
+<status status="NOT RUN" starttime="20221017 12:20:37.513" endtime="20221017 12:20:37.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.521" endtime="20221017 12:20:37.521"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@data-bind='click:marriageSaveClick']</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.523" endtime="20221017 12:20:37.524"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.526" endtime="20221017 12:20:37.527"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ln}</arg>
+<arg>${Reqlname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.528" endtime="20221017 12:20:37.528"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_fn}</arg>
+<arg>${Reqfname}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.529" endtime="20221017 12:20:37.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Req_ad}</arg>
+<arg>${Address}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.531" endtime="20221017 12:20:37.537"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Req_country}</arg>
+<arg>016</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.539" endtime="20221017 12:20:37.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.542" endtime="20221017 12:20:37.542"/>
+</kw>
+<kw name="Scrollbar" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:20:37.543" endtime="20221017 12:20:37.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.545" endtime="20221017 12:20:37.545"/>
+</kw>
+<kw name="FinalSubmitButton" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:20:37.547" endtime="20221017 12:20:37.547"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.555" endtime="20221017 12:20:37.556"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<status status="NOT RUN" starttime="20221017 12:20:37.558" endtime="20221017 12:20:37.558"/>
+</kw>
+<doc>Walk-in Request Entry: Verify the End To End flow client request VO-Marriage</doc>
+<status status="FAIL" starttime="20221017 12:19:23.442" endtime="20221017 12:20:37.560">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t8" name="AU-Bsravan" line="444">
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:20:37.595" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:20:37.592" endtime="20221017 12:22:28.544"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:22:28.554" endtime="20221017 12:22:29.455"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:22:29.460" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:22:29.457" endtime="20221017 12:22:30.446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:22:36.553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:22:35.649" endtime="20221017 12:22:36.553"/>
+</kw>
+<msg timestamp="20221017 12:22:36.554" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:22:30.447" endtime="20221017 12:22:36.555"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.556" endtime="20221017 12:22:36.557"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.557" endtime="20221017 12:22:36.557"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.557" endtime="20221017 12:22:36.557"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.558" endtime="20221017 12:22:36.558"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.558" endtime="20221017 12:22:36.558"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:20:37.580" endtime="20221017 12:22:36.563"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.566" endtime="20221017 12:22:36.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${client_cert_req}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.567" endtime="20221017 12:22:36.568"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Walkin_Menu}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.569" endtime="20221017 12:22:36.569"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.570" endtime="20221017 12:22:36.570"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trans_type}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.571" endtime="20221017 12:22:36.571"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${trans_type}</arg>
+<arg>AU-B</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.572" endtime="20221017 12:22:36.572"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.573" endtime="20221017 12:22:36.573"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${number_of_copies}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.573" endtime="20221017 12:22:36.574"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${child_last_name}</arg>
+<arg>cln</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.574" endtime="20221017 12:22:36.575"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${child_firstname}</arg>
+<arg>cfn</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.580" endtime="20221017 12:22:36.581"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${child_middlename}</arg>
+<arg>cmn</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.582" endtime="20221017 12:22:36.585"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${birth_sex}</arg>
+<arg>Male</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.586" endtime="20221017 12:22:36.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.587" endtime="20221017 12:22:36.588"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${birth_month}</arg>
+<arg>01</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.588" endtime="20221017 12:22:36.588"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${birth_date}</arg>
+<arg>22</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.589" endtime="20221017 12:22:36.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${birth_year}</arg>
+<arg>2022</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.590" endtime="20221017 12:22:36.590"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${birth_country}</arg>
+<arg>608</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.591" endtime="20221017 12:22:36.591"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${birth_province}</arg>
+<arg>001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.592" endtime="20221017 12:22:36.592"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${birth_city}</arg>
+<arg>00101</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.598" endtime="20221017 12:22:36.598"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.600" endtime="20221017 12:22:36.600"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${birth_motherlastname}</arg>
+<arg>mln</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.601" endtime="20221017 12:22:36.602"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${birth_motherfirstname}</arg>
+<arg>mfn</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.603" endtime="20221017 12:22:36.603"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${birth_mothermiddlename}</arg>
+<arg>mmn</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.603" endtime="20221017 12:22:36.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${purpose}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.604" endtime="20221017 12:22:36.604"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${purpose}</arg>
+<arg>CL</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.605" endtime="20221017 12:22:36.606"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txtComments"]</arg>
+<arg>Roboframework</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.606" endtime="20221017 12:22:36.607"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${add_image}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.607" endtime="20221017 12:22:36.608"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5s</arg>
+<arg>Click Element</arg>
+<arg>${add_image}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.608" endtime="20221017 12:22:36.609"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.615" endtime="20221017 12:22:36.616"/>
+</kw>
+<kw name="File Upload" library="ITP2KeyWords">
+<arg>C://Users//GiriganV//Documents//Tiff_Files//uploadingfile.exe</arg>
+<arg>${files}</arg>
+<status status="NOT RUN" starttime="20221017 12:22:36.617" endtime="20221017 12:22:36.617"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:22:36.618" endtime="20221017 12:22:36.618"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:20:37.576" endtime="20221017 12:22:36.619">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t9" name="DocumentConversion" line="482">
+<kw name="Open Counter" library="ITP2KeyWords">
+<doc>This keyword opens the counter of CRS application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20221017 12:22:36.630" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tR0lSSUdBTlY='.</msg>
+<status status="PASS" starttime="20221017 12:22:36.625" endtime="20221017 12:24:43.814"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221017 12:24:43.815" endtime="20221017 12:24:44.193"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<msg timestamp="20221017 12:24:44.197" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221017 12:24:44.194" endtime="20221017 12:24:44.461"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20221017 12:24:50.072" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221017 12:24:49.477" endtime="20221017 12:24:50.072"/>
+</kw>
+<msg timestamp="20221017 12:24:50.073" level="FAIL">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221017 12:24:44.461" endtime="20221017 12:24:50.074"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.075" endtime="20221017 12:24:50.076"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close_success_button}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.076" endtime="20221017 12:24:50.076"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.077" endtime="20221017 12:24:50.078"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="90%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.078" endtime="20221017 12:24:50.078"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${application_home}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.078" endtime="20221017 12:24:50.079"/>
+</kw>
+<status status="FAIL" starttime="20221017 12:22:36.624" endtime="20221017 12:24:50.080"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${more_option}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.083" endtime="20221017 12:24:50.084"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_dc}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.088" endtime="20221017 12:24:50.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_dc_home}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.090" endtime="20221017 12:24:50.090"/>
+</kw>
+<kw name="Scrollbar" library="ITP2KeyWords">
+<status status="NOT RUN" starttime="20221017 12:24:50.091" endtime="20221017 12:24:50.091"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.093" endtime="20221017 12:24:50.093"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_upload}</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.094" endtime="20221017 12:24:50.094"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5 sec</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>//button[@id='birth-AddImageBtn']</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.095" endtime="20221017 12:24:50.095"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>1min</arg>
+<arg>5 sec</arg>
+<arg>click button</arg>
+<arg>//button[@id='birth-AddImageBtn']</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.096" endtime="20221017 12:24:50.097"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.104" endtime="20221017 12:24:50.104"/>
+</kw>
+<kw name="File Upload" library="ITP2KeyWords">
+<arg>C://Users//GiriganV//PycharmProjects//CRSITP2//Files//Tiff_Files//DocumentConversion//Docconversion.exe</arg>
+<arg>${files1}</arg>
+<status status="NOT RUN" starttime="20221017 12:24:50.105" endtime="20221017 12:24:50.105"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.106" endtime="20221017 12:24:50.107"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.109" endtime="20221017 12:24:50.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.110" endtime="20221017 12:24:50.110"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>ACCEPT</arg>
+<arg>1min</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.111" endtime="20221017 12:24:50.111"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.112" endtime="20221017 12:24:50.113"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='UploadBtn']</arg>
+<doc>Click element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 12:24:50.114" endtime="20221017 12:24:50.114"/>
+</kw>
+<doc>End to end flow for Death</doc>
+<tag>Sanity3</tag>
+<status status="FAIL" starttime="20221017 12:22:36.622" endtime="20221017 12:24:50.122">Element 'id=AlertSuccessCloseBtn' not visible after 5 seconds.</status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20220822 15:26:50.610" endtime="20220822 15:28:11.883"/>
+<status status="FAIL" starttime="20221017 12:09:17.034" endtime="20221017 12:24:50.128"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="8" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Sanity1</stat>
+<stat pass="0" fail="1" skip="0">Sanity</stat>
+<stat pass="0" fail="1" skip="0">Sanity3</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="WalkinRequest">WalkinRequest</stat>
+<stat pass="1" fail="8" skip="0" id="s1" name="WalkinRequest">WalkinRequest</stat>
 </suite>
 </statistics>
 <errors>
