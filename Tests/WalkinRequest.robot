@@ -141,45 +141,6 @@ FileUpload
 #    AutoItLibrary.WaitForActiveWindow    WindowTitle=Open
 #    AutoItLibrary.WinWaitActive    Open     &Open
 
-
-AU-Bsravan
-    Open Counter
-    Sleep   5S
-    Click Element       ${client_cert_req}
-#    Click Element       ${wre_Link}
-    Click Link    ${Walkin_Menu}
-    Sleep   3s
-#    Input Text  ${qtn}  0001
-    Click Element   ${trans_type}
-    Select From List By Value   ${trans_type}   AU-B
-    Sleep    3s
-    Input Text  ${number_of_copies}     1
-    Input Text    ${child_last_name}    cln
-    Input Text    ${child_firstname}    cfn
-    Input Text    ${child_middlename}   cmn
-    Select From List By Value   ${birth_sex}    Male
-    Sleep   3s
-    Select From List By Value    ${birth_month}    01
-    Input Text    ${birth_date}    22
-    Input Text    ${birth_year}    2022
-    Select From List By Value    ${birth_country}  608
-    Select From List By Value    ${birth_province}  001
-    Select From List By Value    ${birth_city}  00101
-    Execute Javascript  window.scrollTo(0,2000)
-    Input Text  ${birth_motherlastname}    mln
-    Input Text  ${birth_motherfirstname}      mfn
-    Input Text  ${birth_mothermiddlename}  mmn
-    Click Element   ${purpose}
-    Select From List By Value   ${purpose}   CL
-    Input Text  xpath=//*[@id="txtComments"]   Roboframework
-#    Click Button   ${add_image}
-##AddImg
-    Wait Until Keyword Succeeds    1min    5s    Wait Until Element Is Visible    ${add_image}
-    Wait Until Keyword Succeeds    1min    5s   Click Element    ${add_image}
-    Sleep    5s
-    File Upload    C://Users//GiriganV//Documents//Tiff_Files//uploadingfile.exe    ${files}
-    Sleep   10s
-
 DocumentConversion
 
     [Tags]  Sanity3
