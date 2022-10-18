@@ -136,6 +136,7 @@ FileUpload
     FinalSubmitButton
     sleep    5sec
     capture page screenshot
+    close browser
 
 
 #    AutoItLibrary.WaitForActiveWindow    WindowTitle=Open
